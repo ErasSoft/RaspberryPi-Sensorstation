@@ -1,0 +1,44 @@
+# Hochschule Neubrandenburg
+# VMGG33 - Informatik-Projekt
+# Verfasser: Tino Schuldt
+# Datum: 16.12.2015
+
+
+### Vor dem ersten Start ###
+Bevor das setup.py ausgeführt werden kann, müssen alle Skripte im Projektverzeichnis Ausführungsrechte erhalten!
+Dazu wird das Terminal ausgeführt und in das Verzeichnis der Sensorstation navigiert,
+anschließend werden alle Dateien mit Ausführungsrechen versehen.
+
+Beide benötigten Befehle sind nachfolgend dargestellt:
+cd /pfad/zum/Projektverzeichnis
+chmod +x . -R
+
+
+### setup.py starten ###
+Nun kann die Konfiguration der Sensorstation gestartet werden.
+Entweder im Terminal mit ./setup.py
+Oder durch öffnen und ausführen in der Grafischen Oberfläche
+
+
+### Installation von Sensoren ###
+Für die Installation von Sensoren sind oftmals Root-Rechte (Administratorrechte) notwenig.
+Deswegen muss die Sensorstation für die Installation von Sensoren mit root-Rechten gestartet werden!
+
+Dies geschieht mit dem Befehl sudo im Terminal:
+sudo ./setup.py
+
+
+### webservice.py starten ###
+Um die Messdaten Plattformübergreifend zur Verfügung stellen zu können, muss der Webservice gestartet werden.
+Entweder im Terminal mit ./webservice.py 8080
+Oder durch das Öffnen und Ausführen in der Grafischen Oberfläche
+
+
+### Datenblätter der Sensoren ###
+Die Datenblätter sowie eine Anwenderdokumentation sind im Ordner datasheet vorhanden.
+
+Quellen für die Datenblätter der Sensoren:
+DHT22:		http://akizukidenshi.com/download/ds/aosong/AM2302.pdf
+DS18B20:	http://cdn.sparkfun.com/datasheets/Sensors/Temp/DS18B20.pdf
+HC-SR04:	http://www.micropik.com/PDF/HCSR04.pdf
+MPU-6050:	https://www.cdiweb.com/datasheets/invensense/MPU-6050_DataSheet_V3%204.pdf

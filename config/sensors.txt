@@ -1,0 +1,3 @@
+DS18B20,Temperatur
+DHT22,Temperatur,Luftfeuchtigkeit
+HCSR04,Entfernung
